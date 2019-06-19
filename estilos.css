@@ -1,0 +1,232 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+    font-family:'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.padre{
+display: flex;
+flex-flow: column wrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{
+        background: url(imagenes/trees-green.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column wrap;
+    }
+        .menu{
+            background: rgba( 0, 0, 0, .1); /*transparencia del menu  */
+            display: flex;
+            height: 60px;
+            align-items: center;
+            border-bottom: 2px solid rgba(255, 255, 255, .5)
+          
+        }
+                .logo{
+                    flex:1 1 auto;
+                    color:white;
+                    }
+                    .logo a {
+                        color: white;
+                        font-size: 30px;
+                           }
+                    .logo a:hover {
+                        color:yellowgreen;
+                    }
+
+                .nav{
+                    flex:5 1 auto;
+                    }
+                        .nav a {
+                            color: white;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            padding: 0 10px;
+                            letter-spacing: 2px;
+                        }
+
+                        .nav a:hover {
+                            color: yellowgreen;
+                        }
+                .social{
+                        flex:1 1 auto;  
+                        display: flex;
+                        }
+                        .social a {
+                            font-size: 18px;
+                            color: white;
+                            padding: 0 5px;
+                        }
+                        .social a:hover {
+                            color: yellowgreen;
+                        }
+                .texto-principal{
+                   /* background: #f9fd50;*/
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    }
+                        h1{
+                            font-family: 'lora', serif;
+                            font-size: 22px;
+                            color: white;
+                            font-weight: 300;
+                            text-align: center;
+                            line-height: 1.6;
+                        }
+    .section{       
+        display: flex;
+        }
+        .articulos{
+            background: #f7f7f7;
+            flex: 2 1 70%;
+            display: flex;
+            flex-flow: row wrap;
+        }
+                .article{
+                   flex: 1 1 40%;
+                   color: #444;
+                   font-size: 13px;
+                   letter-spacing: 1px;
+                   margin: 10px 10px 0 0px;
+                   flex: 1 1 45%;
+                   background: #ececec;
+                }
+                .article img {
+                    width: 100%;
+                }
+                .article a {
+                    color: #fff;
+                    font-size: 13px;
+                    padding: 10px;
+                    background: #000;
+                    margin: 10px 0;
+                    display: inline-block;
+                }
+                .article a:hover{
+                    background: #546cc3;
+                }
+                h3{
+                    color: white;
+                    font-size: 13px;
+                    padding: 10px 0;
+                    margin-top: -80px;
+                }
+                 h2{
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    padding: 0px 0 10px 0;
+                    color: white;
+                    }
+                .navegacion{
+                    background: #3bb4c1;
+                    flex: 1 1 100%;
+                    margin: 10px 10px 0 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;     
+                    height: 40px;
+                }
+                .navegacion a {
+                    color:black;
+                    font-size: 12px;
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                    
+
+                }
+        .aside{
+            /*background: #ffd700;*/
+            flex: 1 1 30%;
+            margin: 10px 5px 10px 0;
+              }
+                        .publicidad{
+                           /* background: whitesmoke;*/
+                        }
+                        .aside img{
+                            width: 100%;
+                        }
+                        h4{
+                            background: #000;
+                            color: #fff;
+                            padding: 10px;
+                            text-transform: uppercase;
+                        }
+    .footer{
+        background: #183661;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .pie{
+       /* background: #a1dd70;*/
+         text-align: center;
+    }
+    .pie a {
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+
+@media all and (max-width: 948px){
+        .section{
+            flex-direction: column;
+            }
+        .menu{
+            flex-direction: column;
+            height: auto;
+            }
+        .aside{
+            display: flex;
+            justify-content: center;
+            }
+        h1{
+            font-size: 15px;
+        }
+        .texto-principal{
+            height: 150px;
+        }
+    }
+
+@media all and (max-width: 762px){
+.articulos{
+    flex-direction: column;
+}
+h1{
+    font-size: 15px;
+}
+
+@media all and (max-width: 650px){
+
+.off{
+    display: none;
+}
+.nav a {
+    font-size: 25px;
+}
+}
+
+}
+@media all and (max-width: 480px){
+    .aside{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 12px;
+    }
+
+    }
